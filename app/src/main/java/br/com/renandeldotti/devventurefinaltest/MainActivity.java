@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         mainBinding.recyclerViewCats.setHasFixedSize(true);
 
         List<Cat> cats = new ArrayList<>();
+        /*cats.add(new Cat("","",""));
         cats.add(new Cat("","",""));
         cats.add(new Cat("","",""));
         cats.add(new Cat("","",""));
@@ -31,8 +32,7 @@ public class MainActivity extends AppCompatActivity {
         cats.add(new Cat("","",""));
         cats.add(new Cat("","",""));
         cats.add(new Cat("","",""));
-        cats.add(new Cat("","",""));
-        cats.add(new Cat("","",""));
+        cats.add(new Cat("","",""));*/
 
         mainBinding.recyclerViewCats.setAdapter(new CatImageAdapter(cats));
 
