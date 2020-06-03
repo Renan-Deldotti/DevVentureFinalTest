@@ -26,7 +26,6 @@ public class MainActivityViewModel extends ViewModel {
                 if (response.body() != null) {
                     catData.postValue(response.body());
                 }
-                Log.e(TAG,"Response code: "+response.code());
             }
 
             @Override
