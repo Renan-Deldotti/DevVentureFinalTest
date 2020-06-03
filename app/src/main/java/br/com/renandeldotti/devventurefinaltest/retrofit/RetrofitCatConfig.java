@@ -7,7 +7,6 @@ public class RetrofitCatConfig {
 
     private static final String baseUrl = "https://api.imgur.com/3/";
 
-    private FetchPhotosAPI fetchPhotosAPI;
     private final Retrofit retrofit;
 
     public RetrofitCatConfig() {
