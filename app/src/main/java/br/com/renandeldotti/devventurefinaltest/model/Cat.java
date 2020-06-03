@@ -19,7 +19,7 @@ public class Cat {
         this.data = data;
     }
 
-    static class Data {
+    public static class Data {
         private String id;
         private String title;
         private List<Images> images = new ArrayList<>();
@@ -55,7 +55,7 @@ public class Cat {
         }
     }
 
-    static class Images {
+    public static class Images {
         private String link;
 
         public Images(String link) {
@@ -70,40 +70,4 @@ public class Cat {
             this.link = link;
         }
     }
-
-    /*private String catImageId;
-    private String catImageTitle;
-    private String catImageUrl;
-
-    public Cat() {}
-
-    public Cat(String catImageId, String catImageTitle, String catImageUrl) {
-        this.catImageId = catImageId;
-        this.catImageTitle = catImageTitle;
-        this.catImageUrl = catImageUrl;
-    }
-
-    public String getCatImageId() {
-        return catImageId;
-    }
-
-    public void setCatImageId(String catImageId) {
-        this.catImageId = catImageId;
-    }
-
-    public String getCatImageTitle() {
-        return catImageTitle;
-    }
-
-    public void setCatImageTitle(String catImageTitle) {
-        this.catImageTitle = catImageTitle;
-    }
-
-    public String getCatImageUrl() {
-        return catImageUrl;
-    }
-
-    public void setCatImageUrl(String catImageUrl) {
-        this.catImageUrl = catImageUrl;
-    }*/
 }

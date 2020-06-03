@@ -14,9 +14,9 @@ import br.com.renandeldotti.devventurefinaltest.model.Cat;
 
 public class CatImageAdapter extends RecyclerView.Adapter<CatImageAdapter.CatImageViewHolder> {
 
-    private List<Cat> catList;
+    private List<String> catList;
 
-    public CatImageAdapter(List<Cat> catList) {
+    public CatImageAdapter(List<String> catList) {
         this.catList = catList;
     }
 
