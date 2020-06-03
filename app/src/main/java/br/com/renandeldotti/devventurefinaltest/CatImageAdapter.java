@@ -11,11 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 
 import java.util.List;
 
-import br.com.renandeldotti.devventurefinaltest.model.Cat;
 
 public class CatImageAdapter extends RecyclerView.Adapter<CatImageAdapter.CatImageViewHolder> {
 
