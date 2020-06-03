@@ -1,5 +1,7 @@
 package br.com.renandeldotti.devventurefinaltest;
 
+import android.app.DownloadManager;
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,6 +9,9 @@ import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 import java.util.List;
 
@@ -29,7 +34,9 @@ public class CatImageAdapter extends RecyclerView.Adapter<CatImageAdapter.CatIma
 
     @Override
     public void onBindViewHolder(@NonNull CatImageViewHolder holder, int position) {
-        holder.catImageView.setImageResource(R.drawable.cat_placeholder);
+        Glide.with(holder.catImageView.getContext())
+                .load(catList.get(position))
+                .into(holder.catImageView);
     }
 
     @Override
