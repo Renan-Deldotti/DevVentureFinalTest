@@ -15,4 +15,29 @@
         app:spanCount="4"
         tools:listitem="@layout/single_cat_item" />
 
+    <ProgressBar
+        android:id="@+id/progressBar_loading"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/button_sync"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/sync"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_sync"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerView_cats"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/recyclerView_cats"
+        app:layout_constraintTop_toTopOf="@+id/recyclerView_cats" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
